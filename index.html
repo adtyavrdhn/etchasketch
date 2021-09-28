@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="main-section">
+        <div class="container">
+          <h1 class="title">Etch-A-Sketch</h1>
+          <div class="flex-divide">
+            <div class="options-container">
+              <div class="color-picker">
+                <input type="color" class="color" name="color" />
+              </div>
+              <div class="mybtns">
+                <button class="btncolor btn">Color Mode</button>
+                <button class="btnrainbow btn">Rainbow</button>
+                <button class="btneraser btn">Eraser</button>
+                <button class="btnclear btn">Clear</button>
+              </div>
+              <div class="rangeslider">
+                <input
+                  type="range"
+                  id="grid_range"
+                  name="grid_range"
+                  min="1"
+                  max="64"
+                />
+                <label class="grid_label" for="grid_range"></label>
+              </div>
+            </div>
+            <div class="grid" id="grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Aditya Vardhan</p>
+      <a href="https://github.com/adtyavrdhn"
+        ><img src="GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt=""
+      /></a>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

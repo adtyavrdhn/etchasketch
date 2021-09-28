@@ -1,0 +1,145 @@
+:root {
+  --main-background: #f0f3fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-background);
+}
+.color-picker {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.color {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.btn {
+  padding: 1.9rem;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #077288;
+  border-radius: 9px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.22) 1px 1px 3px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-divide {
+  display: flex;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.mybtns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn:hover {
+  border: none;
+  box-shadow: 0.2rem 0.1rem 2px rgba(0, 0, 0, 0.1);
+  color: var(--shade2);
+}
+
+.rangeslider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_label {
+  font-size: 3.2rem;
+}
+
+.grid {
+  display: grid;
+  height: 55rem;
+  width: 55rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  margin-left: 10rem;
+}
+
+.grid > div {
+  /* border: solid black 1px; */
+  transition: all 1s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+img {
+  width: 4rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+#grid_range {
+  -webkit-appearance: none;
+  outline: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 1px #077288;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+#grid_range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background: #9ece9a;
+}
+#grid_range::-webkit-slider-runnable-track {
+  background-color: #e4c5af;
+}
