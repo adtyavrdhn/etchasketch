@@ -144,39 +144,13 @@ footer {
   background-color: #e4c5af;
 }
 
-@media screen and (max-width: 84rem) {
-  .grid {
-    width: 40rem;
-    height: 40rem;
-  }
-
-  .btn {
-    font-size: 1.4rem;
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 5rem;
-  }
-
-  .color-picker {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  p {
-    font-size: 2rem;
-  }
-  img {
-    width: 3rem;
-  }
+.active {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
-
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 50rem) {
   .grid {
-    width: 40rem;
-    height: 40rem;
-    margin: 0 auto;
+    width: 30rem;
+    height: 30rem;
   }
 
   .btn {
@@ -185,59 +159,7 @@ footer {
   }
 
   h1 {
-    font-size: 3rem;
-  }
-
-  .color-picker {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  p {
-    font-size: 1.6rem;
-  }
-  img {
-    width: 2rem;
-  }
-
-  .flex-divide {
-    flex-direction: column-reverse;
-    gap: 3rem;
-  }
-
-  .options-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.7rem;
-  }
-
-  .mybtns {
-    flex-direction: row;
-  }
-
-  #grid_range::-webkit-slider-thumb {
-    height: 1.2rem;
-    width: 1.2rem;
-  }
-  .grid_label {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 50rem) {
-  .grid {
-    width: 30rem;
-    height: 30rem;
-    margin: 0 auto;
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 0.6rem;
-  }
-
-  h1 {
-    font-size: 2.4rem;
+    font-size: 4.2rem;
   }
 
   .color-picker {
@@ -246,32 +168,26 @@ footer {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   img {
-    width: 1.8rem;
+    width: 2.4rem;
   }
 
   .flex-divide {
+    gap: 3rem;
     flex-direction: column-reverse;
-    gap: 2.6rem;
   }
 
-  .options-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.7rem;
+  .grid {
+    margin: 0 auto;
   }
 
   .mybtns {
     flex-direction: row;
   }
 
-  #grid_range::-webkit-slider-thumb {
-    height: 1.2rem;
-    width: 1.2rem;
-  }
   .grid_label {
-    display: none;
+    font-size: 2rem;
   }
 }

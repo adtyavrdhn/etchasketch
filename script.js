@@ -53,6 +53,14 @@ const colormygrid = function (event) {
 function cleargrid() {
   grid.innerHTML = "";
 }
+///
+
+function removeactive() {
+  [".btnclear", ".btneraser", ".btnrainbow"].forEach(btn);
+  {
+    btn.classList.remove("active");
+  }
+}
 ////
 function setCurrentMode(newmode) {
   currentMode = newmode;
@@ -73,9 +81,21 @@ function setupgrid(size) {
   }
 }
 ////////////////////////
-btncolor.onclick = () => setCurrentMode("color");
-btneraser.onclick = () => setCurrentMode("erase");
-btnrainbow.onclick = () => setCurrentMode("rainbow");
+btncolor.onclick = () => {
+  setCurrentMode("color");
+  removeactive();
+  btncolor.classList.add("active");
+};
+btneraser.onclick = () => {
+  setCurrentMode("erase");
+  removeactive();
+  btncolor.classList.add("active");
+};
+btnrainbow.onclick = () => {
+  setCurrentMode("rainbow");
+  removeactive();
+  btncolor.classList.add("active");
+};
 btnclear.onclick = () => reset();
 ////////////////////////
 
@@ -93,7 +113,16 @@ grid.addEventListener("mouseover", colormygrid);
 //   grid.addEventListener(evt, colormygrid)
 // );
 
-grid.addEventListener("touchstart", colormygrid, true);
+grid.addEventListener(
+  "touchstart",
+  function (e) {
+    grid.addEventListener("touchend", function (evt) {
+      e.stopPropagation();
+    });
+    colormygrid;
+  },
+  true
+);
 /////////////////////////
 slider.addEventListener("input", function () {
   sliderlabel.innerHTML = `${this.value} &times; ${this.value}`;
