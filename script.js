@@ -83,7 +83,15 @@ btnclear.onclick = () => reset();
 //   event.target.style.backgroundColor = "black";
 // });
 
-grid.addEventListener("mouseover", colormygrid);
+// ["click", "ontouchstart"].forEach((evt) =>
+//   element.addEventListener(evt, dosomething, false)
+// );
+
+// grid.addEventListener("mouseover", colormygrid);
+
+["mouseover", "touchstart"].forEach((evt) =>
+  grid.addEventListener(evt, colormygrid)
+);
 /////////////////////////
 slider.addEventListener("input", function () {
   sliderlabel.innerHTML = `${this.value} &times; ${this.value}`;
