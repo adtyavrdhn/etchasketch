@@ -87,11 +87,13 @@ btnclear.onclick = () => reset();
 //   element.addEventListener(evt, dosomething, false)
 // );
 
-// grid.addEventListener("mouseover", colormygrid);
+grid.addEventListener("mouseover", colormygrid);
 
-["mouseover", "touchstart"].forEach((evt) =>
-  grid.addEventListener(evt, colormygrid)
-);
+// ["mouseover", "touchstart"].forEach((evt) =>
+//   grid.addEventListener(evt, colormygrid)
+// );
+
+grid.addEventListener("touchstart", colormygrid, true);
 /////////////////////////
 slider.addEventListener("input", function () {
   sliderlabel.innerHTML = `${this.value} &times; ${this.value}`;
